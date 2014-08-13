@@ -7,7 +7,10 @@ import (
 )
 
 func help() {
-	ctxIrc.WriteToChannel("I nomnom links. (!search <query>, !linkinfo <id>, !addtag <id> [tags])")
+	ctxIrc.WriteToChannel("Datenkrake. I nomnom links.")
+	ctxIrc.WriteToChannel("!search [--tag|-t] <query>")
+	ctxIrc.WriteToChannel("!linkinfo <id>")
+	ctxIrc.WriteToChannel("!addtag <id> <tag> [<tag> [..]]")
 }
 
 func search(query string, tagonly bool) {
